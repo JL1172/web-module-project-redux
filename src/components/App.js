@@ -29,6 +29,7 @@ const App = props => {
             <Route exact path="/movies/add">
               <AddMovieForm />
             </Route>
+            
 
             <Route path="/movies/:id">
               <Movie />
