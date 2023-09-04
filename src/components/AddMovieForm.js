@@ -18,6 +18,7 @@ const AddMovieForm = (props) => {
             description : props.description,
         }
         props.addMovie(movieObj);
+        console.log(movieObj)
         push("/movies/");
     }
 
@@ -68,11 +69,11 @@ const AddMovieForm = (props) => {
 }
 const mapStateToProps = state => {
     return {
-        title : state.title,
-        director : state.director,
-        genre : state.genre,
-        metascore : state.metascore,
-        description : state.description,
+        title : state.movieState.title,
+        director : state.movieState.director,
+        genre : state.movieState.genre,
+        metascore : state.movieState.metascore,
+        description : state.movieState.description,
     }
 }
 
