@@ -18,7 +18,7 @@ const AddMovieForm = (props) => {
             description : props.description,
         }
         props.addMovie(movieObj);
-        push("/");
+        push("/movies/");
     }
 
     return(<div className="col">
