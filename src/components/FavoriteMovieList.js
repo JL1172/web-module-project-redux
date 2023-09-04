@@ -16,7 +16,7 @@ const FavoriteMovieList = (props) => {
                 return <div key={movie.id}>
                     <Link className="btn btn-light savedButton" to={`/movies/${movie.id}`}>
                         {movie.title}
-                        <span><span onClick = {()=> props.removeFavorite(id)} className="material-icons">remove_circle</span></span>
+                        <span><span onClick = {()=> props.removeFavorite(movie.id)} className="material-icons">remove_circle</span></span>
                     </Link> 
                 </div>
             })
